@@ -1,0 +1,119 @@
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .header {
+    text-align: center;
+    background-color: lightblue;
+    color: #353535;
+  }
+  div.form {
+    align-self: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    background-color: lightblue;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5em;
+    }
+    .field {
+      label {
+        min-width: 80px;
+        display: block;
+        line-height: 2em;
+      }
+      display: flex;
+      flex-direction: row;
+    }
+    .container input {
+      margin-bottom: 1em;
+      border: none;
+      font-size: 1.1em;
+      line-height: 2em;
+    }
+    button {
+      width: 100%;
+      border: none;
+      font-size: 1em;
+      line-height: 2em;
+      transition: all ease 0.5s;
+      &:hover {
+        background-color: #00008b9e;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+  table {
+    &.table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      align-self: center;
+      tbody tr {
+        border-bottom: 1px solid lightblue !important;
+        padding: 1em !important;
+      }
+      th {
+        background-color: #00008b9e;
+        color: white;
+        padding: 1em !important;
+      }
+    }
+    tr button {
+      background: none;
+      background-color: #00008b9e;
+      border: none;
+      padding: 7px 9px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:first-child {
+        margin-right: 0.5em;
+      }
+    }
+    &.table tfoot {
+      tr {
+        text-align: center;
+        background-color: #00008b9e;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 0.3em;
+      }
+    }
+    tbody {
+      td {
+        padding: 0.5em;
+        border-left: 1px solid #ccc;
+      }
+      tr td:first-child {
+        border-left: none;
+      }
+    }
+  }
+  .returnBtn a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  button.returnBtn {
+    padding: 0;
+    background-color: #ff00005c;
+  }
+  .newBtn {
+    transition: background ease 0.5s;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      background-color: #6161b7;
+      font-weight: bold;
+    }
+  }
+}
